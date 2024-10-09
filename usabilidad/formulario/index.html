@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <title>Usabilidad en los formularios</title>
+</head>
+<body>
+  <div class="form-contenedor">
+    <h1>Formulario</h1>
+    <form>
+      <div class="form-field">
+        <label>Nombre <b class="rojo">*</b></label>
+        <input type="text" name="nombre" placeholder="Nombre" required>
+      </div>
+      <div class="form-field">
+        <label>Correo electrónico <b class="rojo">*</b></label>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+      </div>
+      <div class="form-field">
+        <label>Teléfono</label>
+        <input type="text" name="telefono" placeholder="Teléfono">
+      </div>
+      <div class="form-field">
+        <label>Mensaje</label>
+        <textarea name="mensaje" maxlength="500" placeholder="Mensaje"></textarea>
+      </div>
+      <button type="submit" class="submit-button">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>
