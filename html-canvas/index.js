@@ -80,3 +80,70 @@ ej7Ctx.fill();
 
 // Ejercicio 8
 
+let ej8 = document.getElementById('ej8');
+let ej8Ctx = ej8.getContext('2d');
+
+ej8Ctx.strokeStyle = 'green';
+ej8Ctx.lineWidth = 5;
+
+ej8Ctx.beginPath();
+ej8Ctx.moveTo(50, 50); // Desde este punto vamos moviéndonos hacia los vértices indicados.
+ej8Ctx.lineTo(200, 50);
+ej8Ctx.lineTo(50, 150);
+ej8Ctx.closePath(); // Importante añadir esto para juntar los vértices.
+ej8Ctx.stroke();
+
+// Ejercicio 9
+
+let ej9 = document.getElementById('ej9');
+let ej9Ctx = ej9.getContext('2d');
+
+ej9Ctx.fillStyle = 'blue';
+
+ej9Ctx.beginPath();
+ej9Ctx.moveTo(50, 50);
+ej9Ctx.lineTo(200, 50);
+ej9Ctx.lineTo(50, 150);
+ej9Ctx.closePath();
+ej9Ctx.fill();
+
+// Ejercicio 10
+
+let ej10 = document.getElementById('ej10');
+let ej10Ctx = ej10.getContext('2d');
+
+ej10Ctx.font = "bold 40px Arial";
+ej10Ctx.fillStyle = 'blue';
+ej10Ctx.textBaseline = 'middle';
+
+ej10Ctx.fillText("Ejercicio final", 10, 100);
+
+// Ejercicio 11
+
+let canvas = document.getElementById('ej11');
+let contexto = canvas.getContext('2d');
+
+contexto.strokeStyle = 'black';
+contexto.strokeRect (0, 0, 550, 350);
+
+let gradienteCielo = contexto.createLinearGradient(0, 0, 0, 175);
+
+gradienteCielo.addColorStop(0, '#4682B4');
+gradienteCielo.addColorStop(1, '#BDD7FE');
+
+contexto.fillStyle = gradienteCielo;
+contexto.fillRect(0, 0, 550, 175);
+
+let gradienteSuelo = contexto.createLinearGradient(0, 175, 0, 350);
+
+gradienteSuelo.addColorStop(0, '#6CBF6C');
+gradienteSuelo.addColorStop(1, '#AEDCAE');
+
+contexto.fillStyle = gradienteSuelo;
+contexto.fillRect(0, 175, 550, 350);
+
+// gradiente lineal vertical para las montañas
+// trazado para montañas
+// degradado radial para la nube
+// dibujar lluvia
+// texto
