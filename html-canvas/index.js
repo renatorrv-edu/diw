@@ -132,7 +132,7 @@ gradienteCielo.addColorStop(0, '#4682B4');
 gradienteCielo.addColorStop(1, '#BDD7FE');
 
 contexto.fillStyle = gradienteCielo;
-contexto.fillRect(0, 0, 550, 175);
+contexto.fillRect(0, 0, 550, 230);
 
 let gradienteSuelo = contexto.createLinearGradient(0, 175, 0, 350);
 
@@ -140,7 +140,28 @@ gradienteSuelo.addColorStop(0, '#6CBF6C');
 gradienteSuelo.addColorStop(1, '#AEDCAE');
 
 contexto.fillStyle = gradienteSuelo;
-contexto.fillRect(0, 175, 550, 350);
+contexto.fillRect(0, 230, 550, 350);
+
+let gradienteCordilera = contexto.createLinearGradient(0, 120, 0, 175);
+
+gradienteCordilera.addColorStop(0, '#FFF9E1');
+gradienteCordilera.addColorStop(1, '#562B05');
+
+contexto.fillStyle = gradienteCordilera;
+
+// Dibujamos la cordillera
+
+contexto.beginPath();
+contexto.moveTo(0, 230);
+contexto.lineTo(100, 130);
+contexto.lineTo(200, 230);
+contexto.lineTo(300, 150);
+contexto.lineTo(400, 230);
+contexto.lineTo(500, 140);
+contexto.lineTo(550, 230);
+contexto.lineTo(0, 230);
+contexto.closePath();
+contexto.fill();         
 
 // gradiente lineal vertical para las montañas
 // trazado para montañas
