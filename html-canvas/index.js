@@ -154,17 +154,52 @@ contexto.fillStyle = gradienteCordilera;
 contexto.beginPath();
 contexto.moveTo(0, 230);
 contexto.lineTo(100, 130);
-contexto.lineTo(200, 230);
-contexto.lineTo(300, 150);
-contexto.lineTo(400, 230);
-contexto.lineTo(500, 140);
+contexto.lineTo(200, 200);
+contexto.lineTo(320, 100);
+contexto.lineTo(450, 200);
+contexto.lineTo(500, 150);
 contexto.lineTo(550, 230);
 contexto.lineTo(0, 230);
 contexto.closePath();
-contexto.fill();         
+contexto.fill();
 
-// gradiente lineal vertical para las montañas
-// trazado para montañas
-// degradado radial para la nube
-// dibujar lluvia
-// texto
+let gradienteNube = contexto.createRadialGradient(375, 100, 10, 375, 100, 60);
+gradienteNube.addColorStop(0, '#0096FF');
+gradienteNube.addColorStop(1, '#0047AB');
+contexto.fillStyle = gradienteNube;
+
+// Comenzamos a dibujar la nube con Curvas Bézier.
+
+contexto.beginPath();
+contexto.moveTo(360, 60);  // Desplazado 140 píxeles hacia arriba
+contexto.bezierCurveTo(360, 10, 480, 10, 480, 60);  // Desplazado
+contexto.bezierCurveTo(520, 50, 550, 100, 500, 120);  // Desplazado
+contexto.bezierCurveTo(470, 140, 440, 150, 400, 120);  // Desplazado
+contexto.bezierCurveTo(370, 160, 330, 120, 310, 100);  // Desplazado
+contexto.bezierCurveTo(290, 80, 330, 40, 380, 60);  // Desplazado
+contexto.closePath();
+contexto.fill();
+
+// Vamos a darle estilo a las gotas de lluvia y a crear los dos bucles for que los dibujarán.
+
+contexto.strokeStyle = '#0047AB';
+contexto.lineWidth = 5;
+
+contexto.beginPath();
+
+for (let i = 0; i < 3; i++) { // 3 filas
+  for (let j = 0; j < 8; j++) { // 8 gotas por fila
+    let x = 310 + j * 30;
+    let y = 160 + i * 40;  // Desplazado 140 píxeles hacia abajo
+
+    contexto.moveTo(x, y);
+    contexto.lineTo(x + 15, y + 20);
+  }
+}
+
+contexto.stroke();
+contexto.closePath();
+
+contexto.font = '35px Verdana';
+contexto.fillStyle = '#FFBF00'
+contexto.fillText("Canvas", 20, 60);
