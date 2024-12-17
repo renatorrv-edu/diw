@@ -1,61 +1,160 @@
 <!doctype html>
 <html lang="es">
 
+<!--He decidido dedicar esta página a uno de mis juegos favoritos: Silent Hill 2. Un videojuego de terror psicológico estrenado en 2001 y que recientemente
+recibió un remake. Es una obra de culto que definió el género y se atrevió a mostrar de una manera retorcida y oscura las facetas más profundas del ser humano,
+como la sexualidad o la muerte con una historia increíble.-->
+
 <head>
   <title>Brookhaven's files</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="static/favicon.ico" type="image/x-icon">
+  <style>
+      .text-justify {
+        text-align: justify;
+      }
+  </style>
 </head>
-<link rel="icon" href="static/favicon.ico" type="image/x-icon">
 
 <body style="background-color: #829991;">
   <header>
-    <nav class="navbar" style="background-color: #000000;">
-      <a href="index.html"><img src="static/logo.png" class="ms-4" alt="Logo de Silent Hill 2" title="Logo de Silent Hill 2" width="300px"></a>
-      <div class="d-flex flex-row me-4">    
-        <a href="index.html" class="link-light fs-3 text-decoration-none px-2 hover-link">Inicio</a>
-        <a href="#" class="link-light fs-3 text-decoration-none px-2">Vídeos</a>
-        <a href="#" class="link-light fs-3 text-decoration-none px-2">Guía</a>
-        <a href="#" class="link-light fs-3 text-decoration-none px-2">Contacto</a>
+    <nav class="navbar sticky-top bg-black">
+      <a href="index.html">
+        <img src="static/logo.png" class="ms-4" alt="Logo de Silent Hill 2" title="Logo de Silent Hill 2" width="300px">
+      </a>
+      <div class="d-flex flex-row me-4">
+        <a href="index.html" class="link-secondary fs-4 text-decoration-none px-2 text-white">Inicio</a>
+        <a href="#acercade" class="link-secondary fs-4 text-decoration-none px-2 text-white">Acerca de</a>
+        <a href="#musica" class="link-secondary fs-4 text-decoration-none px-2 text-white">Música</a>
+        <a href="#imagenes" class="link-secondary fs-4 text-decoration-none px-2 text-white">Imágenes</a>
+        <a href="#" class="link-secondary fs-4 text-decoration-none px-2 text-white">Guía</a>
+        <a href="#" class="link-secondary fs-4 text-decoration-none px-2 text-white">Contacto</a>
       </div>
-    </nav>    
+    </nav>  
   </header>
   
   <main>
-    <div class="flex-row mt-4 d-flex justify-content-center">
-      <div class="h3 fw-bold text-white">
-        Imágenes
+    <div class="container-flex" id="acercade">
+      <div class="flex-row mt-4 d-flex justify-content-center">
+        <div class="display-6 fw-bold" style="color:#000000;">
+          Silent Hill 2
+        </div>
       </div>
     </div>
-    <div class="flex-row mt-4 d-flex justify-content-center">
-      <div id="carouselExampleControls" class="carousel slide w-50" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="static/carrousel1.jpg" alt="María detrás de los barrotes." title="María detrás de los barrotes.">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100 h-100" src="static/carrousel2.jpg" alt="There was a hole here. It's gone now." title="There was a hole here. It's gone now.">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="static/carrousel3.png" alt="James ante el espejo." title="James ante el espejo.">
-          </div>
+    <div class="container">
+      <div class="flex-row mt-4 d-flex justify-content-end">
+        <div class="col-md-7 mt-4">
+          <video width="640" height="360" controls autoplay muted>
+            <source src="static/trailer.mp4" type="video/mp4">
+            Tu navegador no soporta vídeos.
+          </video>
         </div>
-        <a class="carousel-control-prev text-decoration-none" href="#carouselExampleControls" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only fw-bold">Anterior</span>
-        </a>
-        <a class="carousel-control-next text-decoration-none" href="#carouselExampleControls" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only fw-bold text-decoration-none">Siguiente</span>
-        </a>
+        <div class="col-md-5 mt-4">
+          <p class="fs-5">
+            En Silent Hill 2, el protagonista, James Sunderland, recibe una carta de su esposa Mary, quien murió de una enfermedad hace tres años. 
+            Mary le dice a James que vaya a una pequeña ciudad turística llamada Silent Hill, donde una vez fueron de vacaciones. 
+            <br><br>
+            Ella escribe:
+          </p>
+          <blockquote class="blockquote">
+            <p class="mb-0 fst-italic">En mis sueños más inquietos, veo esa ciudad. Silent Hill. Prometiste volver a llevarme allí algún día. Pero nunca lo hiciste. Y ahora estoy aquí sola... En nuestro «lugar especial» Esperándote...</p>
+          </blockquote>
+        </div>
+      </div>
+      <div class="flex-row mt-4 d-flex justify-content-center">
+        <div class="col-md-12">
+          <p class="fs-5 mt-2 text-justify">
+            Silent Hill 2 (サイレントヒル 2 Sairento Hiru Tsū) es un videojuego de terror psicológico y supervivencia de disparos en tercera persona desarrollado por Bloober Team y publicado por Konami Digital Entertainment. 
+            Es una nueva versión del videojuego de 2001, Silent Hill 2, desarrollado originalmente por Team Silent, un grupo dentro de Konami Computer Entertainment Tokyo (KCET). 
+            Es una obra de culto que definió el género y se atrevió a mostrar de una manera retorcida y oscura las facetas más profundas del ser humano,
+            como la sexualidad o la muerte con una historia terrorífica e introspectiva.
+            Al igual que el juego original, sigue a James Sunderland, un viudo que regresa a la ciudad homónima de Silent Hill al recibir una carta de su difunta esposa Mary quien dice estar esperándolo allí.
+          </p>
+        </div>
+      </div>      
+    </div>
+    <div class="container-flex" id="musica">
+      <div class="flex-row mt-5 d-flex justify-content-center">
+        <div class="display-6 fw-bold" style="color:#000000;">
+          Música
+        </div>
+      </div>
+      <div class="flex-row mt-3 d-flex justify-content-center">
+        <div class="col-md-8">
+          <p class="fs-5 mt-2 text-justify">
+            La música de Silent Hill 2, compuesta por Akira Yamaoka, es una obra maestra que captura la esencia melancólica y perturbadora del juego. 
+            Con una mezcla de melodías etéreas, sonidos industriales y atmósferas inquietantes, la banda sonora sumerge al jugador en la desesperación y soledad de James Sunderland. 
+            Temas icónicos como "Theme of Laura" logran equilibrar belleza y tristeza, reflejando perfectamente las emociones profundas de la historia y 
+            su oscuro simbolismo. Es una música que no solo acompaña al juego, sino que lo eleva a un nivel de inmersión emocional único en el género.
+          </p>
+        </div>
+      </div>
+      <div class="flex-row mt-5 d-flex justify-content-center">
+        <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+          <h4 class="text-center">Theme of Laura</h4>
+          <small class="text-muted mb-3">Akira Yamaoka</small>
+          <audio controls>
+            <source src="static/theme-of-laura.mp3" type="audio/mpeg">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+        <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+          <h4 class="text-center">Promise</h4>
+          <small class="text-muted mb-3">Akira Yamaoka</small>
+          <audio controls>
+            <source src="static/promise.mp3" type="audio/mpeg">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+        <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+          <h4 class="text-center">White Noise</h4>
+          <small class="text-muted mb-3">Akira Yamaoka</small>
+          <audio controls>
+            <source src="static/white-noise.mp3" type="audio/mpeg">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+      </div>
+    </div>
+    <div class="container-flex mt-5 mb-5" id="imagenes">
+      <div class="flex-row mt-5 d-flex justify-content-center">
+        <div class="display-6 fw-bold" style="color:#000000;">
+          Imágenes
+        </div>
+      </div>
+      <div class="flex-row mt-4 d-flex justify-content-center">
+        <div id="carouselExampleControls" class="carousel slide w-50" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="static/carrousel1.jpg" alt="María detrás de los barrotes." title="María detrás de los barrotes.">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 h-100" src="static/carrousel2.jpg" alt="There was a hole here. It's gone now." title="There was a hole here. It's gone now.">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="static/carrousel3.png" alt="James ante el espejo." title="James ante el espejo.">
+            </div>
+          </div>
+          <a class="carousel-control-prev text-decoration-none" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only fw-bold">Anterior</span>
+          </a>
+          <a class="carousel-control-next text-decoration-none" href="#carouselExampleControls" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only fw-bold text-decoration-none">Siguiente</span>
+          </a>
+        </div>
       </div>
     </div>
   </main>
 
-  <footer>
-
-  </footer>
+  <footer class="footer mt-auto py-2 bg-black">
+    <div class="container text-center text-white">
+      <span>© Renato R. Romero</span>
+    </div>
+  </footer>  
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
