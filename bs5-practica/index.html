@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    function demo(){ return this};
+    var padre = demo();
+    console.log(padre); //Window
+    padre = window.demo()
+    console.log(padre); //Window
+  </script>
+</body>
+</html>
